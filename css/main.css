@@ -1,0 +1,294 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: rgb(0,0,0);
+    overflow-x: hidden;
+    text-align:center;
+    background-color: black;
+}
+
+body {
+    width: 100%;
+}
+
+/*div{
+    border: 1px solid red;
+}*/
+
+p{
+    margin:0;
+    padding:0;
+}
+li{
+    padding-bottom: 20px;
+}
+a{
+    color:white;
+    font-weight: bold;
+}
+.topspace{
+    margin-top: 60px;
+}
+.left_head{
+    margin-left: 20px;
+}
+
+.space{
+    width:100%;
+    height:200px;
+    background-color: #011910;
+}
+.space2{
+    width:100%;
+    height:80px;
+    background-color: #fcd046;
+}
+.space1{
+    width:100%;
+    height:200px;
+    background-color: #fcd046;
+}
+.space3{
+    width:100%;
+    height:200px;
+    background-color: black;
+}
+.space4{
+    width:100%;
+    height:80px;
+    background-color: black;
+}
+.space5{
+    width:100%;
+    height:80px;
+    background-color: #011910;
+}
+.padding10{
+    padding-bottom: 20px;
+}
+
+.padding20{
+    padding-bottom: 30px;
+}
+
+.distance{
+    margin-bottom: 60px;
+}
+.section_No1{
+    background-color: #011910;
+    padding:0px;
+    color: white;
+}
+.section_No3{
+    background-color: #fcd046;
+    padding:0px;
+    color: white;
+}
+
+.section_No2{
+    background-color: black;
+    padding:10px;
+}
+.above{
+    margin-top: -1.9%;
+    position: absolute;
+    margin-left: 11.6%;
+    z-index: 1;
+    pointer-events:none;
+}
+
+.white{
+    color: white;
+}
+
+.flexbox{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /*align-items: flex-end;*/
+    margin-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.flexbox .box:nth-of-type(4) {
+    /*background-color: red;*/
+    margin-right: 0px;
+}
+.flexbox .box:nth-of-type(1) {
+    /*background-color: red;*/
+    margin-left: 0px;
+}
+.box{
+    width:32.5%;
+    margin-top: 10px;
+    /*bottom: 0; Question: How can I get the text alligned at the bottom?*/
+}
+.box1{
+    width:47.5%;
+    margin-top: 10px;
+    text-align: left;
+
+}
+.box2{
+     width:32.5%;
+    margin-top: 10px;
+}
+/*  SECTIONS  */
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+    display: inline;
+    float:left;
+    margin: 0px;
+}
+.col:first-child { margin-left: 0px; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+/*  GRID OF THREE  */
+.span2_3_of_3 {
+    width: 33.3%;
+}
+.span2_2_of_3 {
+    width: 33.3%;
+}
+.span2_1_of_3 {
+    width: 33.3%;
+}
+.breakout{
+    text-align: center;
+    font-size:12.1em;
+    font-weight: bold;
+    color: white;
+    border-bottom: solid 1px black;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.big{
+    font-size: 2em;
+    font-weight: bold;
+}
+.hidden{
+    color:red;
+}
+.spacetop{
+    margin-top: 30px;
+}
+.spacebottom{
+    margin-bottom: 30px;
+}
+
+.header_small{
+    background-color: black;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    height:20px;
+    width:100%;
+    color: white;
+    text-align: center;
+}
+.black_font{
+    color:black;
+}
+
+.footer{
+    background-color: #011910;
+    padding:20px;
+    padding-bottom: 30px;
+}
+
+@media (max-width: 870px) {
+    .breakout{
+        font-size:8em;
+    }
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 1024px) {
+    .box{
+        width:200px;
+    }
+    .flexbox{
+        flex-wrap: wrap;
+        flex-basis: 50% | auto;
+    }
+    .flexbox .box {
+        margin-left: 10px;
+    }
+    .flexbox .box:nth-of-type(2) {
+        /*background-color: yellow;*/
+        order:-2;
+        margin-left: 0px;
+    }
+    .flexbox .box:nth-of-type(3) {
+        /*background-color: yellow;*/
+        margin-left: 0px;
+    }
+    .flexbox .box {
+        margin-right: 0px;
+    }
+    .breakout{
+        font-size:4em;
+    }
+    .box2{
+     width:100px;
+    margin-top: 10px;
+    }
+    .flexbox .box2:nth-of-type(3) {
+        /*background-color: yellow;*/
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .flexbox{
+        display: inline-block;
+        flex-wrap: wrap;
+        flex-basis: 50% | auto;
+    }
+    .flexbox .box {
+        margin-left: 10px;
+    }
+    .flexbox .box2 {
+        margin-left: 10px;
+    }
+
+    .flexbox .box:nth-of-type(3) {
+        /*background-color: yellow;*/
+        margin-left: 0px;
+    }
+    .flexbox .box2 {
+        margin-left: 10px;
+    }
+
+    .flexbox .box2:nth-of-type(3) {
+        /*background-color: yellow;*/
+        margin-left: 0px;
+    }
+    .box{
+        width:150px;
+    }
+    .box1{
+        width:150px;
+    }
+}

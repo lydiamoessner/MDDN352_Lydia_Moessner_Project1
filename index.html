@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" /> <!-- This is normalize.css, which resets basic/default styling across browsers, making design and layout easier and more consistent. -->
+
+        <link rel="stylesheet" href="./css/main.css" /> <!-- This links to your custom page styling. -->
+
+        <!-- This links to a webfont, from Google Fonts; this lets you use a font not installed on the user's system. This is Roboto, the Android system font, with all weights, and italics. We'll call this in 'css/main.css' later.  -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+<body>
+<div class="header_small">
+</div>
+<section class="section_No3">
+<div class="black">
+  <img src="media/patrick-schneider-345227-unsplash_warmer.jpg" alt="Header" width="100%">
+</div>
+<div class="space1"></div>
+<div>
+  <h2 class="black_font">The Hiking Phases</h2>
+</div>
+<div>
+  <p class="Space_40 black_font">
+    The main idea of the project is,<br> that hikers want to see emotional pictures of the hike first for making an decision.<br> Afterwards during the hike, they don't want to look at their phone but enjoy the view.<br> In the end they want to share their experience.<br>
+    <br>
+    This leads to the conclusion that going for a hike can be devided in the following three phases:
+  </p>
+  <div class="spacetop"></div>
+  <div class="space2"></div>
+<div class="flexbox">
+  <div class="box">
+    <p class="black_font">
+      Planning
+    </p>
+    <br>
+    <img src="media/iphone_8_mockup_start.jpg" alt="Header" width="100%">
+  </div>
+  <div class="box">
+    <p class="black_font">
+      On Track
+    </p>
+    <br>
+    <img src="media/iphone_8_mockup_Tour2.jpg" alt="Header" width="100%">
+  </div>
+  <div class="box">
+    <p class="black_font">
+      Socializing
+    </p>
+    <br>
+    <img src="media/iphone_8_mockup_Socialmedia2.jpg" alt="Header" width="100%">
+  </div>
+</div>
+</div>
+</section>
+<div class="space1"></div>
+<section class="section_No2">
+<div class="space3"></div>
+<div class="distance">
+  <h2 class="white">App Preview</h2>
+</div>
+<div class="space4"></div>
+<div class="flexbox">
+  <div class="box1">
+    <iframe style="border: none;" width="100%" height="544" src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/myaQqYvie3nzkj26tJEhHr/JUMP-and-TURN_2-Copy?node-id=472%3A3649&scaling=contain" allowfullscreen></iframe>
+  </div>
+  <div class="box1 white">
+    <p class="left_head">
+      On Track Advantages
+    </p>
+      <ul>
+        <li>
+          Keep phone in your pocket
+        </li>
+        <li>
+          Enjoy the view
+        </li>
+        <li>
+          Get haptic or audio feedback
+        </li>
+        <li>
+          Everything is saved
+        </li>
+        <li>
+          Be able to find the places again, that excited you
+        </li>
+      </ul>
+      <p class="left_head topspace">
+      Off Track Advantages
+    </p>
+      <ul>
+        <li>
+          Visual and emotional access
+        </li>
+        <li>
+          Share experience with your cummunity
+        </li>
+        <li>
+          Start your tour where you are located now
+        </li>
+        <li>
+          Big open image archive (Instagram)
+        </li>
+        <li>
+          Get feedback of others who tried out your hike
+        </li>
+      </ul>
+  </div>
+</div>
+</div>
+<div>
+</section>
+<section class="section_No1">
+<div class="space"></div>
+<div>
+  <h2 class="white">The Techniqual Part</h2>
+</div>
+  <p class="Space_40 white">
+    To provide the experience described,<br> several technical aspects have to be considered:
+  </p>
+<div class="space5"></div>
+  <div class="spacetop"></div>
+<div class="flexbox">
+  <div class="box">
+    <p class="padding10">
+      Emitting Vibration
+    </p>
+    <img class="padding20" src="media/vibrate.svg" alt="Header" width="40px">
+    <p class="left">
+      The phone can emitt haptic signals in form of vibration. The quality of the vibration can be determined so that the user can associate an event with it. Like the morse code can be decoded by using the alphabet, the user can decode the vibrations as he is getting used to the associated events. 
+    </p>
+  </div>
+  <div class="box">
+    <p class="padding10">
+      MEMS
+    </p>
+    <img class="padding20" src="media/computer-microprocessor.svg" alt="Header" width="40px">
+    <p class="left">
+      The experience of setting waypoints without actually touching the phone can be achieved using the sensors of the phone. The MEMS is a microchip which detects movements to the left, right and front. Though interpreting patterns, it can tell apart steps and jumps and other possible moves.
+    </p>
+  </div>
+  <div class="box">
+    <p class="padding10">
+      Gyroscope Sensor
+    </p>
+    <img class="padding20"src="media/compass.svg" alt="Header" width="40px">
+    <p class="left">
+      The gyroscope sensor is the sensor also used for google Maps. It can determine the position of the phone itself. With this sensor, the implementation for example of compass functions are possible. In our case, the phone knows if the user is turning and so the app can create a star at that exact point of the map.
+    </p>
+  </div>
+</div>
+</div>
+<div class="space"></div>
+</section>
+<section class="section_No2">
+<div class="space3"></div>
+<h2 class="white">
+  Sources for JUMP&TURN
+</h2>
+<div class="space4"></div>
+<div class="flexbox">
+  <div class="box2">
+    <p class="white">
+    Background Information<br>
+    <br>
+    <a href="https://www.giga.de/apps/android/specials/gyroskop-sensor-im-handy-was-macht-er-wie-funktionierts-einfach-erklaert/">Gyroscope Sensor</a><br>
+    <br>
+    <a href="https://praxistipps.chip.de/wie-funktioniert-ein-schrittzaehler-im-handy-einfach-erklaert_50573">MEMS Sensor</a><br><br>
+    Figma GUI<br>
+    <br>
+    <a href="https://freebiesupply.com/free-figma/    ios-11-gui-for-figma/">Freebie Figma</a><br>
+    <br>
+    <a href="https://www.figma.com/file/es8SIc9ZOlKvOKujnNJIWX    /iOS-11-GUI-%E2%80%93-iPhone-8-by-Great-Simple-Studio---Sc    reens-(Copy)">IOS Figma</a><br><br>
+    </p>
+  </div>
+  <div class="box2">
+    <p class="white">
+Photos Unsplash<br>
+<br>
+<a href="https://unsplash.com/photos/PEQF05GeIAI">Photo 1</a><br><br>
+<a href="https://unsplash.com/photos/fItRJ7AHak8">Photo 2</a><br><br>
+
+<a href="https://unsplash.com/photos/pa0rr3rVB-U">Photo 3</a><br><br>
+
+<a href="https://unsplash.com/photos/O25Z70HW0g4">Photo 4</a><br><br>
+
+<a href="https://unsplash.com/photos/k7RQhG8s7ck">Photo 5</a><br><br>
+
+<a href="https://unsplash.com/photos/UjxL9x0nwQ8">Photo 6</a><br><br>
+
+<a href="https://unsplash.com/photos/kv4OM426JYg">Photo 7</a><br><br>
+
+<a href="https://unsplash.com/photos/6Mxb_mZ_Q8E">Photo 8</a><br><br>
+
+<a href="https://unsplash.com/photos/FAn-NWH8Bzw">Photo 9</a><br><br>
+
+<a href="https://unsplash.com/photos/UZtRU-lWZE4">Photo 10</a><br><br>
+
+<a href="https://unsplash.com/photos/HkNKkRoiGk8">Photo 11</a><br><br>
+
+<a href="https://unsplash.com/photos/n_L_ppO4QtY">Photo 12</a><br><br>
+
+<a href="https://unsplash.com/photos/6bKpHAun4d8">Photo 13</a><br><br>
+
+<a href="https://unsplash.com/photos/BX4pK9OJgVo">Photo 14</a><br><br>
+
+<a href="https://unsplash.com/photos/NhU0nUR7920">Photo 15</a><br><br>
+
+<a href="https://unsplash.com/photos/lkMJcGDZLVs">Photo 16</a><br><br>
+</p>
+  </div>
+  <div class="box2">
+    <p class="white">
+Graphics<br><br>
+<a href="https://www.flaticon.com/free-icon/bicycle-rider_71422#term=bike&page=1&position=2">Icon Biker</a><br><br>
+<a href="https://www.flaticon.com/free-icon/bicycle-rider_71422#term=bike&page=1&position=2">Biker</a><br><br>
+<a href="https://www.flaticon.com/free-icon/bicycle-rider_71422#term=bike&page=1&position=2">Biker2</a><br><br>
+
+<a href="https://www.flaticon.com/free-icon/eye_159604#term=visible&page=1&position=4">Icon Eye</a><br><br>
+
+<a href="https://www.flaticon.com/free-icon/compass_109694#term=compass&page=1&position=9">Icon Gyroscope</a><br><br>
+
+<a href="https://www.flaticon.com/free-icon/vibrate_481354#term=Vibration&page=1&position=11">Icon Vibration</a><br><br>
+
+<a href="https://www.flaticon.com/free-icon/computer-microprocessor_22434#term=microchip&page=1&position=18">MEMS</a><br><br>
+
+<a href="https://dribbble.com/shots/3906395-iPhone-8-Plus-in-Hand-Mockup-PSD">Mockup iPhone8</a><br><br>
+
+<a href="https://dribbble.com/shots/3807106-Free-Vector-Apple-iPhone-8-Mockup-Ai-EPS">Mockup iPhone8 No2</a><br><br>
+
+<a href="https://www.google.co.nz/maps?source=tldsi&hl=de">Google Maps</a><br><br><br>
+</p>
+  </div>
+</div>
+</div>
+</div>
+</section>
+<div class="footer">
+<p class="white">
+  <br>
+  Lydia Mössner (2018) | Victoria University | School of Design
+</p>
+</div>
+</body>
+</html>
